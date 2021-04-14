@@ -5,10 +5,11 @@ Feature: Authentication - OrangeHRM
   @cnx
   Scenario: Vérifier l'authentification
     Given J'ouvre l'application OrangeHRM
-    When Je saisi le username
-    And Je saisi le mot de passe
+    When Je saisi le username "Admin"
+    And Je saisi le mot de passe "admin123"
     And Je clique sur le bouton Login
-    Then Redirection vers la page Home de l'application OrangeHRM
-  
+    Then Redirection vers la page Home de l'application OrangeHRM "Welcome"
+    
+    
 
   

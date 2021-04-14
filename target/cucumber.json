@@ -1,0 +1,164 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3529949699,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Vérifier l\u0027authentification",
+        "description": "",
+        "id": "buzz---orangehrm;vérifier-l\u0027authentification",
+        "after": [
+          {
+            "result": {
+              "duration": 1355677700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2878745401,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "J\u0027ouvre l\u0027application OrangeHRM",
+            "match": {
+              "location": "AuthentificationStepDefinition.jOuvreLApplicationOrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 127491700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Je saisi le username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 22
+                }
+              ],
+              "location": "AuthentificationStepDefinition.jeSaisiLeUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63906700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Je saisi le mot de passe \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 26
+                }
+              ],
+              "location": "AuthentificationStepDefinition.jeSaisiLeMotDePasse(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6138384099,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Je clique sur le bouton Login",
+            "match": {
+              "location": "AuthentificationStepDefinition.jeCliqueSurLeBoutonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33812800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Redirection vers la page Home de l\u0027application OrangeHRM \"Welcome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome",
+                  "offset": 58
+                }
+              ],
+              "location": "AuthentificationStepDefinition.redirectionVersLaPageHomeDeLApplicationOrangeHRM(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7785342700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Je clique sur le buzz",
+            "match": {
+              "location": "ModuleBuzzStepDefinition.jeCliqueSurLeBuzz()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77832800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Je saisie mon nom dans le champs update status \"Rihab Cherif\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rihab Cherif",
+                  "offset": 48
+                }
+              ],
+              "location": "ModuleBuzzStepDefinition.jeSaisieMonNomDansLeChampsUpdateStatus(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@authetification"
+          }
+        ]
+      }
+    ],
+    "name": "Buzz - OrangeHRM",
+    "description": "En tant que utilisateur je souhaite m\u0027authentifier et ecrire mon nom dans le champs buzz",
+    "id": "buzz---orangehrm",
+    "keyword": "Feature",
+    "uri": "buzz/Buzz.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@buzz"
+      }
+    ]
+  }
+]
