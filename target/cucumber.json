@@ -3,41 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 3529949699,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Setup.setup()"
-            }
-          }
-        ],
         "line": 6,
-        "name": "Vérifier l\u0027authentification",
+        "name": "",
         "description": "",
-        "id": "buzz---orangehrm;vérifier-l\u0027authentification",
-        "after": [
-          {
-            "result": {
-              "duration": 1355677700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Setup.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 2878745401,
+              "duration": 3402244300,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "J\u0027ouvre l\u0027application OrangeHRM",
             "match": {
               "location": "AuthentificationStepDefinition.jOuvreLApplicationOrangeHRM()"
@@ -46,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 127491700,
+              "duration": 87844800,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "Je saisi le username \"Admin\"",
             "match": {
               "arguments": [
@@ -64,10 +41,10 @@
           },
           {
             "result": {
-              "duration": 63906700,
+              "duration": 64920500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Je saisi le mot de passe \"admin123\"",
             "match": {
               "arguments": [
@@ -82,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 6138384099,
+              "duration": 5542003400,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "Je clique sur le bouton Login",
             "match": {
               "location": "AuthentificationStepDefinition.jeCliqueSurLeBoutonLogin()"
@@ -94,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 33812800,
+              "duration": 1432415400,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "Redirection vers la page Home de l\u0027application OrangeHRM \"Welcome\"",
             "match": {
               "arguments": [
@@ -112,52 +89,108 @@
           },
           {
             "result": {
-              "duration": 7785342700,
+              "duration": 1426342400,
               "status": "passed"
             },
-            "line": 13,
-            "name": "Je clique sur le buzz",
+            "line": 12,
+            "name": "Je clique sur le module My info",
             "match": {
-              "location": "ModuleBuzzStepDefinition.jeCliqueSurLeBuzz()"
+              "location": "MyInfoStepDefinition.jeCliqueSurLeModuleMyInfo()"
             },
             "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2455550000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Editer Custom Fields - OrangeHRM",
+        "description": "",
+        "id": "modifier-mes-informations--orangehrm;editer-custom-fields---orangehrm",
+        "after": [
+          {
+            "result": {
+              "duration": 1360387000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 62863400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Je clique sur le bouton Edit dans custom",
+            "match": {
+              "location": "MyInfoStepDefinition.jeCliqueSurLeBoutonEditDansCustom()"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 77832800,
+              "duration": 3164539500,
               "status": "passed"
             },
-            "line": 14,
-            "name": "Je saisie mon nom dans le champs update status \"Rihab Cherif\"",
+            "line": 24,
+            "name": "Je selectionne blood type \"A+\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Rihab Cherif",
-                  "offset": 48
+                  "val": "A+",
+                  "offset": 27
                 }
               ],
-              "location": "ModuleBuzzStepDefinition.jeSaisieMonNomDansLeChampsUpdateStatus(String)"
+              "location": "MyInfoStepDefinition.jeSelectionneBloodType(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56386500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Je clique sur le bouton save dans custom",
+            "match": {
+              "location": "MyInfoStepDefinition.jeCliqueSurLeBoutonSaveDansCustom()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 5,
-            "name": "@authetification"
+            "line": 21,
+            "name": "@info2"
           }
         ]
       }
     ],
-    "name": "Buzz - OrangeHRM",
-    "description": "En tant que utilisateur je souhaite m\u0027authentifier et ecrire mon nom dans le champs buzz",
-    "id": "buzz---orangehrm",
+    "name": "Modifier mes informations- OrangeHRM",
+    "description": "\nEn tant que utilisateur je souhaite modifier mes informations",
+    "id": "modifier-mes-informations--orangehrm",
     "keyword": "Feature",
-    "uri": "buzz/Buzz.feature",
+    "uri": "my_info/EditMyInfo.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@buzz"
+        "name": "@info"
       }
     ]
   }

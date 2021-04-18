@@ -19,7 +19,7 @@ public class ModuleBuzzStepDefinition {
 
 	@When("^Je clique sur le buzz$")
 	public void jeCliqueSurLeBuzz() throws Throwable {
-		PageFactory.initElements(driver, ModuleBuzzPage.class);
+		PageFactory.initElements(driver, moduleBuzzPage);
 		moduleBuzzPage.clickOnBuzz();
 
 	}

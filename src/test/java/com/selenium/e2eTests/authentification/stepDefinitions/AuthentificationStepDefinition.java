@@ -24,32 +24,32 @@ public class AuthentificationStepDefinition extends CommonMethods {
 
 	@Given("^J'ouvre l'application OrangeHRM$")
 	public void jOuvreLApplicationOrangeHRM() throws Throwable {
-		logger.info("J'ouvre l'application OrangeHRM");
+		//logger.info("J'ouvre l'application OrangeHRM");
 		commonMethods.openApplication();
 	}
 
 	@When("^Je saisi le username \"([^\"]*)\"$")
 	public void jeSaisiLeUsername(String name) throws Throwable {
-		logger.info("Je saisi le username");
+		//logger.info("Je saisi le username");
 		PageFactory.initElements(driver, AuthentificationPage.class);
 		authentificationPage.fillUserName(name);
 	}
 
 	@When("^Je saisi le mot de passe \"([^\"]*)\"$")
 	public void jeSaisiLeMotDePasse(String password1) throws Throwable {
-		logger.info("Je saisi le mot de passe");
+		//logger.info("Je saisi le mot de passe");
 		authentificationPage.fillPassWord(password1);
 	}
 
 	@When("^Je clique sur le bouton Login$")
 	public void jeCliqueSurLeBoutonLogin() throws Throwable {
-		logger.info("Je clique sur le bouton Login");
+		//logger.info("Je clique sur le bouton Login");
 		authentificationPage.clickOnBtnLogin();
 	}
 
 	@Then("^Redirection vers la page Home de l'application OrangeHRM \"([^\"]*)\"$")
 	public void redirectionVersLaPageHomeDeLApplicationOrangeHRM(String textWelcome) throws Throwable {
-		logger.info("Redirection vers la page Home de l'application OrangeHRM");
+		//logger.info("Redirection vers la page Home de l'application OrangeHRM");
 		String adminUser = AuthentificationPage.welcome.getText();
 		Assert.assertTrue(adminUser.contains(textWelcome));
 
